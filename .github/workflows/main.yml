@@ -19,10 +19,9 @@ jobs:
         java-version: '17'
 
     - name: Dar permissão ao Gradle
-      run: chmod +x gradlew
-
+      run: gradlew
     - name: Compilar APK Debug
-      run: ./gradlew assembleDebug
+      run: gradlew assembleDebug
 
     - name: Guardar APK gerado
       uses: actions/upload-artifact@v4
